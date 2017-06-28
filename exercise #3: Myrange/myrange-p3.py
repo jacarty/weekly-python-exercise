@@ -3,14 +3,16 @@
 """This function is a homegrown implementation of the range command.
 
 Range Stop Options:
+    Yields - number of generator iterations to return
     Stop - stop of the range when starting at 0
 
 Range Start, End, Increment Options:
+    Yields - number of generator iterations to return
     Start - beginning of the range
     End - end of the range
     Increment - option to set the increment that is returned between start and end
 
-Format of usage: myrange-p2-expanded.py -s START -e END -i INCREMENT
+Format of usage: myrange-p3.py -y YIELDS -s START -e END -i INCREMENT
 """
 
 import argparse
@@ -48,8 +50,8 @@ def myrange2(x, y, z):
 
 if __name__ == "__main__":
     loop = myrange2(args.s,
-             args.e,
-             args.i)
+                    args.e,
+                    args.i)
     try:
         for i in range(args.y):
             next(loop)
