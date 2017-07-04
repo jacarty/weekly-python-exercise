@@ -8,6 +8,7 @@
 ehthumbs.db
 Thumbs.db
 
-# Pycharm            #
+# Pycharm & VSCode   #
 ######################
 .idea/*
+.vscode/*
