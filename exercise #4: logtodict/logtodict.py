@@ -9,7 +9,7 @@ listofdict = []
 
 ip = re.compile('\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3}')
 time = re.compile('\d{1,2}/\w{3}/\S+ [+]\d{4}')
-web_request = re.compile('"\w{3} /(\S+)? \w{4}/\d.\d')
+web_request = re.compile('"GET /(\S+)? \w{4}/\d.\d')
 
 
 def logtodict(textfile):
